@@ -15,6 +15,7 @@ implementations depend on the type.
 ## Prerequisite Knowledge
 
 * Basic knowledge of Java Generics.
+* [Git Glossary](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
 ## Questions
 
@@ -100,7 +101,9 @@ command depends on your present working directory), then please note that contex
 
 1. Now that you have that working, let's use Git to go back in time to what the exercise
    directory looked like when you first cloned the repository so that we can fix the code
-   using generics.
+   using generics. The following steps make use of Git-related jargon. You may find the
+   [official glossary](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitglossary.html)
+   useful when new terms are used.
 
    1. Use the following command to view a condensed, graphical version of the Git log:
 
