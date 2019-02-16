@@ -13,11 +13,11 @@ import cs1302.Utility;
  * <li>{@code next} - a reference to another {@code ObjectContainer} object.</li>
  * </ul>
  *
- * <h2>Conditions for {@code contents} Property</h2>
+ * <h3>Conditions for {@code contents} Property</h3>
  * The {@code contents} property is not allowed to be <i>unset</i>. This condition is enforced by
  * the container's constructors and associated setter methods.
  *
- * <h2>Conditions for {@code next} Property</h2>
+ * <h3>Conditions for {@code next} Property</h3>
  * The {@code next} property may be <i>set</i> or <i>unset</i>. Users of this container may use 
  * verbeage such as "this container does not refer to anoter container" when this property is unset.
  */

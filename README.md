@@ -7,10 +7,10 @@ This class exercise covers introduces the reader to Java Generics, a powerful wa
 interfaces, and methods using a type parameter.
 
 Generics are used when you want to apply the exact same implementation (code) to various types.
-Contrast this with Inheritance which is used when you need common functionality to be implemented
-in different ways. Think of a getPerimeter() method that can be applied to objects of type Circle
-and Square. These classes both contain the getPerimeter() method but the implementations depend
-on the type.
+Contrast this with inheritance which is used when you need common functionality to be implemented
+in different ways. Think of a `getPerimeter()` method that can be applied to references to objects
+of type `Circle` and `Square`. These classes both contain the `getPerimeter()` method but the
+implementations depend on the type.
 
 ## Prerequisite Knowledge
 
@@ -59,9 +59,11 @@ command depends on your present working directory), then please note that contex
    dependency arrows. Do not list inherited members unless they are explicitly overriden.
 
 1. Execute the command to generate the API documentation website for the conde contained in this exercise
-   and place it in the `doc` subdirectory. Be sure to write the full command in your notes.
-
-TODO:We can possibly include linking to the oracle documentation.
+   and place it in the `doc` subdirectory.
+   Use the `-link` option with the `javadoc` command to automatically link external types (e.g., `Object`)
+   to the official Oracle API documentation website
+   [here](https://docs.oracle.com/javase/8/docs/api).
+   Be sure to write the full command in your notes.
 
 1. For each line in the `createStringList` method in `Driver.java`, draw a diagram that illustrates any nodes
    that have been created along with their associated string values and next references. Since next is a
@@ -77,16 +79,27 @@ TODO:We can possibly include linking to the oracle documentation.
    1. Look at the first error reported by `javac`;
    1. Write the error down in your notes;
    1. Fix the error in the code using type casting;
-   1. Recompile; then
-   1. Note the fix in your notes.
+   1. Recompile;
+   1. Note the fix in your notes; then
    1. Repeat as needed.
 
    **Note:** Unless absolutely necessary, casting should be avoided. We are doing it here for educational
    purposes.
    
-1. Run `Driver`. 
+1. Run `Driver`. If you counter an exception, then detail the following in your notes:
+   1. The complete output of the compiler;
+   1. Why the exception was thrown;
+   1. Fix the code without changing the datatype of the `lastDouble` variable;
+   1. Recompile;
+   1. Note the attempted fix; then
+   1. Repeat as needed.
+
+1. Commit the changes to your local copy of the exercise repository. Be sure to include a good log message.
+
+**CHECKPOINT**
 
 
+1. 
 1. It looks like there might be some redundancy among the different container classes.
    In your notes, draw a new UML diagram that reduces the overall redundancy by adding
    or removing classes and interfaces and making use of appropriate inter-class

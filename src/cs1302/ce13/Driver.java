@@ -19,12 +19,12 @@ public class Driver {
         ObjectContainer stringHead = createStringList();
         ObjectContainer doubleHead = createDoubleList();
 
-        String lastString = stringHead.getNext()
+        String lastString = (String) stringHead.getNext()
             .getNext()
             .getNext()
             .get();
 
-        Double lastDouble = doubleHead.getNext()
+        Double lastDouble = (Double) doubleHead.getNext()
             .getNext()
             .getNext()
             .get();
