@@ -1,7 +1,7 @@
 # cs1302-ce13 Java Generics
 
 > Be careful what you wish for, lest it come true.
-> **Chinese Proverb**
+> **--Chinese Proverb**
 
 This class exercise covers introduces the reader to Java Generics, a powerful way to write classes,
 interfaces, and methods using a type parameter.
@@ -98,19 +98,65 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+1. Now that you have that working, let's use Git to go back in time to what the exercise
+   directory looked like when you first cloned the repository so that we can fix the code
+   using generics.
 
-1. 
-1. It looks like there might be some redundancy among the different container classes.
-   In your notes, draw a new UML diagram that reduces the overall redundancy by adding
-   or removing classes and interfaces and making use of appropriate inter-class
-   associations. 
+   1. Use the following command to view a condensed, graphical version of the Git log:
+      ```
+      $ git log --graph --oneline --all --decorate
+      ```
+      The oldest commit in the log is displayed last. In this condensed version, each
+      line displays a commit with its associated log message as well as other important
+      pieces of information. Here is an example of a similar commit entry in a log (yours
+      may differ):
+      ```
+      * d70a020 (HEAD, origin/master, origin/HEAD, master) updated description      
+      ```
+      In this example:
+      * `d70a020` is a hexadecimal number that serves as an identifier for the commit;
+      * `(HEAD, origin/master, origin/HEAD, master)` denotes branch names for the commit;
+      * `HEAD` indicates that this commit is currently checked out; and
+      * the rest of the lines is the associated log message.
+   1. In your notes, write the most recent commit displayed in your log.
+   1. Now, use the following command to check out the oldest commit in your log, replacing
+      `IDNUM` with the hexadecimal identifier for that commit:
+      ```
+      $ git checkout IDNUM -b restart
+      ```
+   1. Now view the output of a condensed, graphical version of the Git log.
+      In your notes, describe the graph displayed by the log.
+   1. Confirm that you traveled through time by inspecting the contents of the `.java`
+      files. In your notes, mark today's date as the day that you became a time
+      traveler!
+
+1. Now let's create a generic version of the `ObjectContainer` class called
+   `cs1302.ce13.Container` with a type parameter called `T`. Before you write the code,
+   draw a UML diagram in your notes to illustrate what the class will look like.
+   You may denote any type parameters in the class name in your diagram similar to
+   how you would denote them in class's signature in a `.java` file.
+
+1. Now write and document the source code for the generic `cs1302.ce13.Container` class.
+   Since your class will have a type parameter, be sure to include an `@param` for `<T>`
+   in your Javadoc comment for the class -- something that you've likely not had to do in
+   the past. 
+
+1. Compile your new `Container` code using `bin` as the default package for compiled code.
+   If you encounter any compilation errors:
    
-1. How does your redesign reduce redundancy? Justify your answer. 
+   1. Look at the first error reported by `javac`;
+   1. Write the error down in your notes;
+   1. Fix the error in the code using type casting;
+   1. Recompile;
+   1. Note the fix in your notes; then
+   1. Repeat as needed.
 
-   **NOTE:** If the instructor or PLA thinks that further redundancy can be eliminated, then 
-   they may ask you to repeat these last two steps before signing off your checkpoint. If you're 
-   asked to repeat the last two steps, then don't scratch your work! Keep your existing designs
-   and notes available so that you can reflect on the evolution of your design choices.
+1. Generate the API documentation website for all of the code in the `cs1302` package
+   into the `doc` directory. You may need to create the `doc` directory if it does not already exist.
+   Host the documentation on Nike using `cs1302-ce13-doc` as the name for your symbolic link.
+   What is the URL for the `Container` class on your website?
+
+1. Commit the changes to your local copy of the exercise repository. Be sure to include a good log message.
 
 **CHECKPOINT**
 
