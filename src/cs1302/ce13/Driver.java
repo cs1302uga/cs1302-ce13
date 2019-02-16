@@ -16,38 +16,50 @@ public class Driver {
      */
     public static void main(String[] args) {
 	
-	ObjectContainer stringHead = createStringList();
-	ObjectContainer doubleHead = createDoubleList();
+        ObjectContainer stringHead = createStringList();
+        ObjectContainer doubleHead = createDoubleList();
 
-	String lastString = stringHead.getNext()
-	    .getNext()
-	    .getNext()
-	    .get();
+        String lastString = stringHead.getNext()
+            .getNext()
+            .getNext()
+            .get();
 
-	Double lastDouble = doubleHead.getNext()
-	    .getNext()
-	    .getNext()
-	    .get();
+        Double lastDouble = doubleHead.getNext()
+            .getNext()
+            .getNext()
+            .get();
 
-	System.out.println(lastString);	
-	System.out.println(lastDouble);
+        System.out.println(lastString);	
+        System.out.println(lastDouble);
 	
     } // main
 
+    /**
+     * Returns the first {@ObjectContainer} reference in a list
+     * of {@ObjectContainer} objects. The returned list is made
+     * up of four {@ObjectContainer} objects - each containing a single
+     * {@code String}. 
+     *
+     * The returned list of strings is: 
+     * {@code Deborah -> Linda -> Steve -> Mike }
+     *
+     * @return a reference to the head of an {@ObjectContainer} list.
+     */
     private static ObjectContainer createStringList() {
 
-	ObjectContainer oc = new ObjectContainer("Mike");
-	oc = new ObjectContainer("Steve", oc);
-	oc = new ObjectContainer("Linda", oc);
-	oc = new ObjectContainer("Deborah", oc);
+        ObjectContainer oc = new ObjectContainer("Mike");
+        oc = new ObjectContainer("Steve", oc);
+        oc = new ObjectContainer("Linda", oc);
+        oc = new ObjectContainer("Deborah", oc);
+        return oc;
     } // createStringList
 
     private static ObjectContainer createDoubleList() {
-
-	ObjectContainer oc = new ObjectContainer(2.3);
-	oc = new ObjectContainer(495.18, oc);
-	oc = new ObjectContainer(1234.18, oc);
-	oc = new ObjectContainer(1, oc);
+        ObjectContainer oc = new ObjectContainer(2);
+        oc = new ObjectContainer(495.18, oc);
+        oc = new ObjectContainer(1234.18, oc);
+        oc = new ObjectContainer(1.237, oc);
+        return oc;
     } // createStringList
     
 } // Driver
