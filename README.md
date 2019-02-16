@@ -118,7 +118,7 @@ command depends on your present working directory), then please note that contex
       ```
       
       In this example:
-      * `d70a020` is a hexadecimal number that serves as an identifier for the commit;
+      * `d70a020` is a hexadecimal number that serves as a checksum/identifier for the commit;
       * `(HEAD, origin/master, origin/HEAD, master)` denotes branch names for the commit;
       * `HEAD` indicates that this commit is currently checked out; and
       * the rest of the lines is the associated log message.
@@ -205,8 +205,6 @@ command depends on your present working directory), then please note that contex
 1. View the output of a condensed, graphical version of the Git log.
 
 **CHECKPOINT**
-
-**NOT A CHECKPOINT**
 
 <hr/>
 
