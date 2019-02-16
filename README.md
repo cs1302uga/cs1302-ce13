@@ -179,7 +179,7 @@ command depends on your present working directory), then please note that contex
    the type for your container class, it must be fully parameterized. That is, we are explicitly
    requiring you not to use the raw type version of `Container` for this step.
 
-1. Run the code. If you encounter compile-time error, then
+1. Run the code. If you encounter any compile-time error, then
    detail the following in your notes:
    1. The complete output of the compiler;
    1. Why the exception was thrown;
