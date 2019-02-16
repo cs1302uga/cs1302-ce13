@@ -76,17 +76,12 @@ public class ObjectContainer {
      *
      * @param contents reference to the associated object
      * @throws NullPointerException if {@code contents} is {@code null}.
-     * @throws NullPointerException if the contents are null.
      */
     public void set(Object contents) {
         Utility.nullCheck("ObjectContainer: set", contents);
         this.contents = contents;
     } // set
 
-    /**
-     * Returns the contents of this {@code ObjectContainer} object.
-     * @return the contents of this object container.
-     */
     /**
      * Returns the value of the {@code contents} property for this container.
      *

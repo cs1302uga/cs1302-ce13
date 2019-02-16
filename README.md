@@ -63,6 +63,13 @@ command depends on your present working directory), then please note that contex
 
 TODO:We can possibly include linking to the oracle documentation.
 
+1. For each line in the `createStringList` method in `Driver.java`, draw a diagram that illustrates any nodes
+   that have been created along with their associated string values and next references. Since next is a
+   reference, you would either need to denote it as null or draw an arrow to the object it references.
+   Redraw the entire picture after each line. Although the associated string is also a reference, you may
+   draw it within the node. Number each step in your notes. Reference variables that are not contained in
+   node objects should also be included in the diagram.
+
 1. Compile the starter code using `bin` as the default package for compiled code. Make sure you compile
    the classes in the proper order considering the dependencies. If you encounter any compilation
    errors:
