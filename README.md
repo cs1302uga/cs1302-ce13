@@ -103,27 +103,34 @@ command depends on your present working directory), then please note that contex
    using generics.
 
    1. Use the following command to view a condensed, graphical version of the Git log:
+
       ```
       $ git log --graph --oneline --all --decorate
       ```
+
       The oldest commit in the log is displayed last. In this condensed version, each
       line displays a commit with its associated log message as well as other important
       pieces of information. Here is an example of a similar commit entry in a log (yours
       may differ):
+      
       ```
       * d70a020 (HEAD, origin/master, origin/HEAD, master) updated description      
       ```
+      
       In this example:
       * `d70a020` is a hexadecimal number that serves as an identifier for the commit;
       * `(HEAD, origin/master, origin/HEAD, master)` denotes branch names for the commit;
       * `HEAD` indicates that this commit is currently checked out; and
       * the rest of the lines is the associated log message.
+      
    1. In your notes, write the most recent commit displayed in your log.
-   1. Now, use the following command to check out the oldest commit in your log, replacing
+   1. Now, use the following command to check out the oldest commit in your log, replacing   
       `IDNUM` with the hexadecimal identifier for that commit:
+
       ```
       $ git checkout IDNUM -b restart
       ```
+
    1. Now view the output of a condensed, graphical version of the Git log.
       In your notes, describe the graph displayed by the log.
    1. Confirm that you traveled through time by inspecting the contents of the `.java`
