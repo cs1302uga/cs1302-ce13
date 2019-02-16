@@ -123,16 +123,19 @@ command depends on your present working directory), then please note that contex
       * `HEAD` indicates that this commit is currently checked out; and
       * the rest of the lines is the associated log message.
       
-   1. In your notes, write the most recent commit displayed in your log.
-   1. Now, use the following command to check out the oldest commit in your log, replacing   
-      `IDNUM` with the hexadecimal identifier for that commit:
+   1. In your notes, write down the complete line for the most recent commit displayed in your log.
+   
+   1. Now, use the following command to check out the oldest commit in your log and give
+      it a branch name called `restart`, replacing `IDNUM` with the hexadecimal
+      identifier for that commit:
 
       ```
       $ git checkout IDNUM -b restart
       ```
 
-   1. Now view the output of a condensed, graphical version of the Git log.
+   1. View the output of a condensed, graphical version of the Git log.
       In your notes, describe the graph displayed by the log.
+      
    1. Confirm that you traveled through time by inspecting the contents of the `.java`
       files. In your notes, mark today's date as the day that you became a time
       traveler!
@@ -146,7 +149,9 @@ command depends on your present working directory), then please note that contex
 1. Now write and document the source code for the generic `cs1302.ce13.Container` class.
    Since your class will have a type parameter, be sure to include an `@param` for `<T>`
    in your Javadoc comment for the class -- something that you've likely not had to do in
-   the past. 
+   the past.  Whenever you refer to the type for  your container class, it must be fully
+   parameterized. That is, we are explicitly requiring you not to use the raw type
+   version of `Container` for this step.
 
 1. Compile your new `Container` code using `bin` as the default package for compiled code.
    If you encounter any compilation errors:
@@ -163,51 +168,43 @@ command depends on your present working directory), then please note that contex
    Host the documentation on Nike using `cs1302-ce13-doc` as the name for your symbolic link.
    What is the URL for the `Container` class on your website?
 
-1. Commit the changes to your local copy of the exercise repository. Be sure to include a good log message.
+1. Commit the changes to your local copy of the exercise repository.
+   Be sure to include a good log message.
 
 **CHECKPOINT**
 
-1. Make sure you are in the `cs1302-ce12` directory. Delete the code for the container classes 
-   using Git and the `rm` command:
-   
-   ```
-   $ git rm -rf src/cs1302/ce12/*Container.java
-   ```
-   
-1. What is the complete output of the Git `status` command?
+1. Update and document the `Driver` class to use your generic `Container` class instead of
+   `ObjectContainer` without changing the datatypes of any non-container local variables
+   (i.e., do not change the types for `lastString` and `lastDouble`). Whenever you refer to
+   the type for your container class, it must be fully parameterized. That is, we are explicitly
+   requiring you not to use the raw type version of `Container` for this step.
 
-1. Commit the changes to your local copy of the repository. 
-   Be sure to include a good log message.
-
-1. Write the code to implement you approved design from the previous checkpoint. 
-   Make sure that any types you create are in the `cs1302.ce12` package. 
-   Before you continue, make sure your code compiles.
-   
-1. Tell Git to track the `.java` files you just created.
-   What command can be used to tell that they are now tracked?
-   
-1. Commit the changes to your local copy of the exercise repository.
-   Be sure to include a good log message.
-   
-1. Modify the `cs1302.ce12.Driver` class to utilize your redesign.
-
-1. If you encounter any compililation errors:
-
-   1. Write the error down in your notes;
-   1. Fix the error in your code;
-   1. Recompile; then
-   1. Note the fix in your notes.
+1. Run the code. If you encounter compile-time error, then
+   detail the following in your notes:
+   1. The complete output of the compiler;
+   1. Why the exception was thrown;
+   1. Fix the code;
+   1. Recompile;
+   1. Note the attempted fix; then
    1. Repeat as needed.
 
 1. Commit the changes to your local copy of the exercise repository.
+   Be sure to include a good log message.
 
-Be sure to include a good log message.
+1. Consider the errors you encountered in the last step compared the errors you encountered
+   in the previous checkpoint with your old version of the code. Were there any errors that you
+   encountered at compile time instead of run-time? If so, **what and why?**
 
-1. What is the output of running the `cs1302.ce12.Driver` class?
-   Did the output match the output of the original driver?
+1. In your notes, write down the full statements for each of the following
+   variable declarations in the `Driver` class:
+   * `stringHead`
+   * `lastString`
+   * `doubleHead`
+   * `lastDouble`
+
+1. View the output of a condensed, graphical version of the Git log.
 
 **CHECKPOINT**
-
 
 **NOT A CHECKPOINT**
 
