@@ -53,19 +53,20 @@ command depends on your present working directory), then please note that contex
    The "Depends On" column should list any Java types in the starter code that the file
    is dependent upon.
    
-
-
-
-  Do this?
-
 1. In your notes, draw a complete, proper UML diagram for all of the code contained in the
    starter code. You might need to devote an entire page to this. We recommend using a pencil.
    Be sure to include generalization (`extends`), realization (`implements`), and 
    dependency arrows. Do not list inherited members unless they are explicitly overriden.
-   
+
+1. Generate the javadoc.  We can possibly include linking to the oracle documentation.
+
+
+
 1. Compile all of the starter code and run the `cs1302.ce13.Driver` class.
    What is the output?
-   
+
+
+
 1. It looks like there might be some redundancy among the different container classes.
    In your notes, draw a new UML diagram that reduces the overall redundancy by adding
    or removing classes and interfaces and making use of appropriate inter-class
