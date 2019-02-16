@@ -1,7 +1,7 @@
 # cs1302-ce13 Java Generics
 
-> One Ring to rule them all, One Ring to find them [...]
-> **--J.R.R. Tolkien's epigraph to _The Lord of the Rings_**
+> Be careful what you wish for, lest it come true.
+> **Chinese Proverb**
 
 This class exercise covers introduces the reader to Java Generics, a powerful way to write classes,
 interfaces, and methods using a type parameter.
