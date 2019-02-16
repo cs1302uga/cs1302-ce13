@@ -3,81 +3,97 @@ package cs1302.ce13;
 import cs1302.Utility;
 
 /**
- * Represents a container for {@code Object} objects. Each {@code ObjectContainer} contains a reference to another {@code ObjectContainer}.
- * {@code ObjectContainer} objects cannot store {@code null} values. 
- * However, they can reference {@code null}.
+ * Represents a container for objects of type {@code Object} Each container has associated
+ * with it a set of properties. Within this documentation, a property that is referred to as 
+ * <i>set</i> is assumed to refer to some object, and a property that is <i>unset</i> is 
+ * assumed to contain the value {@code null}. Here is the full list of associated
+ * properties:
+ * <ul style="padding-top: 1em;">
+ * <li>{@code contents}- a reference to an associated object of type {@code Object}; and</li>
+ * <li>{@code next} - a reference to another {@code ObjectContainer} object.</li>
+ * </ul>
+ *
+ * <h2>Conditions for {@code contents} Property</h2>
+ * The {@code contents} property is not allowed to be <i>unset</i>. This condition is enforced by
+ * the container's constructors and associated setter methods.
+ *
+ * <h2>Conditions for {@code next} Property</h2>
+ * The {@code next} property may be <i>set</i> or <i>unset</i>. Users of this container may use 
+ * verbeage such as "this container does not refer to anoter container" when this property is unset.
  */
 public class ObjectContainer {
 
-    /** The contents of this container. */
+    /** A reference to the contents of this container. */
     private Object contents;
-    /** A reference to another {@code ObjectContainer} */
+
+    /** A reference to another {@code ObjectContainer}. */
     private ObjectContainer next;
     
     /**
-     * Constructs a {@code cs1302.generics.ObjectContainer} object
-     * with the specified {@code Object}. The specified value cannot
-     * be {@code null}. This constructor sets the next reference to
-     * {@code null}.
+     * Constructs {@code ObjectContainer} with the {@code contents} property <i>set</i> and the 
+     * {@code next} property <i>unset</i>.
      *
-     * @param contents the contents for the {@code ObjectContainer}
-     * @throws NullPointerException if the contents are null.
+     * @param contents reference to the associated object
+     * @throws NullPointerException if {@code contents} is {@code null}.
      */
     public ObjectContainer(Object contents) {
-	set(contents);
+        set(contents);
     } // ObjectContainer
 
     /**
-     * Constructs a {@code cs1302.generics.ObjectContainer} object
-     * with the specified {@code Object} and next reference. 
-     * The specified contents value cannot be {@code null}. The next
-     * reference may be {@code null}.
+     * Constructs a {@code ObjectContainer} with the {@code contents} property <i>set</i>
+     * and the {@code next} property <i>set</i> or <i>unset</i>.
      *
-     * @param contents the contents for the {@code ObjectContainer}.
-     * @param next the {@code ObjectContainer} this container refers to.
-     * @throws NullPointerException if the contents are null.
+     * @param contents reference to the associated object
+     * @param next reference to the next container
+     * @throws NullPointerException if {@code contents} is {@code null}.
      */
     public ObjectContainer(Object contents, ObjectContainer next) {
-	set(contents);
-	this.next = next;
+        set(contents);
+        this.next = next;
     } // ObjectContainer
+    
     /**
-     * Returns the referenced {@code ObjectContainer}.
+     * Returns the value of the {@code next} property for this container.
      *
-     * @return the referenced {@code ObjectContainer}.
+     * @return the reference to the next container
      */
     public ObjectContainer getNext() {
-	return next;
+        return next;
     } // getNext
     
     /**
-     * Sets the {@code ObjectContainer} that this object
-     * refers to.
+     * Sets the value of the {@code next} property for this container.
      *
-     * @param nextObj a reference to the specified {@code ObjectContainer}
+     * @param next a reference to the next container
      */
-    public void setNext(ObjectContainer nextObj) {
-	this.next = nextObj;
+    public void setNext(ObjectContainer next) {
+        this.next = next;
     } // setNext
     
     /**
-     * Modifies the contents of this {@code ObjectContainer} object.
-     * The specified value cannot be {@code null}.
+     * Sets the value of the {@code contents} property for this container.
      *
-     * @param contents the contents for the {@code ObjectContainer}
+     * @param contents reference to the associated object
+     * @throws NullPointerException if {@code contents} is {@code null}.
      * @throws NullPointerException if the contents are null.
      */
     public void set(Object contents) {
-	Utility.nullCheck("ObjectContainer: set", contents);
-	this.contents = contents;
+        Utility.nullCheck("ObjectContainer: set", contents);
+        this.contents = contents;
     } // set
 
     /**
      * Returns the contents of this {@code ObjectContainer} object.
      * @return the contents of this object container.
      */
+    /**
+     * Returns the value of the {@code contents} property for this container.
+     *
+     * @return the reference to the associated object
+     */
     public Object get() {
-	return contents;
+        return contents;
     } // get
 
 } // Container

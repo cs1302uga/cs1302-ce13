@@ -47,7 +47,7 @@ public class Driver {
 	ObjectContainer oc = new ObjectContainer(2.3);
 	oc = new ObjectContainer(495.18, oc);
 	oc = new ObjectContainer(1234.18, oc);
-	oc = new ObjectContainer(1.901, oc);
+	oc = new ObjectContainer(1, oc);
     } // createStringList
     
 } // Driver
