@@ -61,7 +61,7 @@ public class Driver {
      * list.
      */
     private static ObjectContainer createDoubleList() {
-        ObjectContainer oc = new ObjectContainer(2);
+        ObjectContainer oc = new ObjectContainer('2');
         oc = new ObjectContainer(495.18, oc);
         oc = new ObjectContainer(1234.18, oc);
         oc = new ObjectContainer(1.237, oc);

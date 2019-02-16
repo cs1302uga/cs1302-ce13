@@ -74,13 +74,17 @@ TODO:We can possibly include linking to the oracle documentation.
    the classes in the proper order considering the dependencies. If you encounter any compilation
    errors:
    
+   1. Look at the first error reported by `javac`;
    1. Write the error down in your notes;
-   1. Fix the error in the code without introducing generics;
+   1. Fix the error in the code using type casting;
    1. Recompile; then
    1. Note the fix in your notes.
    1. Repeat as needed.
+
+   **Note:** Unless absolutely necessary, casting should be avoided. We are doing it here for educational
+   purposes.
    
-1. 
+1. Run `Driver`. 
 
 
 1. It looks like there might be some redundancy among the different container classes.
