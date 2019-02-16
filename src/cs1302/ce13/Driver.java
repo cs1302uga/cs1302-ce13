@@ -34,20 +34,33 @@ public class Driver {
 	
     } // main
 
+    /**
+     * Returns the first {@ObjectContainer} reference in a list
+     * of {@ObjectContainer} objects. The returned list is made
+     * up of four {@ObjectContainer} objects - each containing a single
+     * {@code String}. 
+     *
+     * The returned list of strings is: 
+     * {@code Deborah -> Linda -> Steve -> Mike }
+     *
+     * @return a reference to the head of an {@ObjectContainer} list.
+     */
     private static ObjectContainer createStringList() {
 
 	ObjectContainer oc = new ObjectContainer("Mike");
 	oc = new ObjectContainer("Steve", oc);
 	oc = new ObjectContainer("Linda", oc);
 	oc = new ObjectContainer("Deborah", oc);
+	return oc;
     } // createStringList
 
     private static ObjectContainer createDoubleList() {
 
-	ObjectContainer oc = new ObjectContainer(2.3);
+	ObjectContainer oc = new ObjectContainer(2);
 	oc = new ObjectContainer(495.18, oc);
 	oc = new ObjectContainer(1234.18, oc);
-	oc = new ObjectContainer(1.901, oc);
+	oc = new ObjectContainer(1.237, oc);
+	return oc;
     } // createStringList
     
 } // Driver

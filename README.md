@@ -58,13 +58,22 @@ command depends on your present working directory), then please note that contex
    Be sure to include generalization (`extends`), realization (`implements`), and 
    dependency arrows. Do not list inherited members unless they are explicitly overriden.
 
-1. Generate the javadoc.  We can possibly include linking to the oracle documentation.
+1. Execute the command to generate the API documentation website for the conde contained in this exercise
+   and place it in the `doc` subdirectory. Be sure to write the full command in your notes.
 
+TODO:We can possibly include linking to the oracle documentation.
 
-
-1. Compile all of the starter code and run the `cs1302.ce13.Driver` class.
-   What is the output?
-
+1. Compile the starter code using `bin` as the default package for compiled code. Make sure you compile
+   the classes in the proper order considering the dependencies. If you encounter any compilation
+   errors:
+   
+   1. Write the error down in your notes;
+   1. Fix the error in the code without introducing generics;
+   1. Recompile; then
+   1. Note the fix in your notes.
+   1. Repeat as needed.
+   
+1. 
 
 
 1. It looks like there might be some redundancy among the different container classes.
