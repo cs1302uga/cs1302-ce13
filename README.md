@@ -43,22 +43,27 @@ command depends on your present working directory), then please note that contex
 
    For each Java file under the `src` subdirectory, fill out a table similar to the following:
    
-   | File Name | Java Type? | FQN | Depends On | Line Count |
-   |-----------|------------|-----|------------|------------|
-   |-----------|------------|-----|------------|------------|
-   |-----------|------------|-----|------------|------------|
-   |-----------|------------|-----|------------|------------|
+   | File Name | Java Type? | FQN | Depends On |
+   |-----------|------------|-----|------------|
+   |-----------|------------|-----|------------|
+   |-----------|------------|-----|------------|
+   |-----------|------------|-----|------------|
 
    The "Java Type" column should list the outermost type in the file (e.g., class, interface, enum, etc). 
    The "Depends On" column should list any Java types in the starter code that the file
-   is dependent upon. To determine the "Line Count", you may use the `wc` command.
+   is dependent upon.
    
+
+
+
+  Do this?
+
 1. In your notes, draw a complete, proper UML diagram for all of the code contained in the
    starter code. You might need to devote an entire page to this. We recommend using a pencil.
    Be sure to include generalization (`extends`), realization (`implements`), and 
    dependency arrows. Do not list inherited members unless they are explicitly overriden.
    
-1. Compile all of the starter code and run the `cs1302.ce12.Driver` class.
+1. Compile all of the starter code and run the `cs1302.ce13.Driver` class.
    What is the output?
    
 1. It looks like there might be some redundancy among the different container classes.
@@ -108,7 +113,8 @@ command depends on your present working directory), then please note that contex
    1. Repeat as needed.
 
 1. Commit the changes to your local copy of the exercise repository.
-   Be sure to include a good log message.
+
+Be sure to include a good log message.
 
 1. What is the output of running the `cs1302.ce12.Driver` class?
    Did the output match the output of the original driver?

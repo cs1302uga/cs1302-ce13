@@ -1,7 +1,7 @@
-package cs1302.ce12;
+package cs1302.ce13;
 
 /**
- * Driver program for cs1302 class exercise 12 using various types of 
+ * Driver program for cs1302 class exercise 13 using various types of 
  * container objects.
  * 
  * @author Brad Barnes and Supa' Mike
@@ -12,21 +12,42 @@ public class Driver {
 
     /**
      * Creates objects for each type of container to check basic functionality.
+     * @param args command line argument array.
      */
     public static void main(String[] args) {
 	
-	//Declare objects of all of our container types
-	ObjectContainer sc = new ObjectContainer("I wish I had a next reference");
-	ObjectContainer dc = new ObjectContainer(4.5);
-	ObjectContainer ic = new ObjectContainer(7);
-	ObjectContainer bc = new ObjectContainer(true);
+	ObjectContainer stringHead = createStringList();
+	ObjectContainer doubleHead = createDoubleList();
 
-	//Print the contents of each container
-	System.out.println(sc.get());
-	System.out.println(dc.get());
-	System.out.println(ic.get());
-	System.out.println(bc.get());
+	String lastString = stringHead.getNext()
+	    .getNext()
+	    .getNext()
+	    .get();
 
+	Double lastDouble = doubleHead.getNext()
+	    .getNext()
+	    .getNext()
+	    .get();
+
+	System.out.println(lastString);	
+	System.out.println(lastDouble);
+	
     } // main
+
+    private static ObjectContainer createStringList() {
+
+	ObjectContainer oc = new ObjectContainer("Mike");
+	oc = new ObjectContainer("Steve", oc);
+	oc = new ObjectContainer("Linda", oc);
+	oc = new ObjectContainer("Deborah", oc);
+    } // createStringList
+
+    private static ObjectContainer createDoubleList() {
+
+	ObjectContainer oc = new ObjectContainer(2.3);
+	oc = new ObjectContainer(495.18, oc);
+	oc = new ObjectContainer(1234.18, oc);
+	oc = new ObjectContainer(1.901, oc);
+    } // createStringList
     
 } // Driver
