@@ -4,7 +4,7 @@
 > **--Chinese Proverb**
 
 This class exercise covers introduces the reader to Java Generics, a powerful way to write classes,
-interfaces, and methods using a type parameter.
+interfaces, and methods using a type parameter. It also introduces students to time travel using Git.
 
 Generics are used when you want to apply the exact same implementation (code) to various types.
 Contrast this with inheritance which is used when you need common functionality to be implemented
