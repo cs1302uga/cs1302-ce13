@@ -59,7 +59,7 @@ command depends on your present working directory), then please note that contex
    Be sure to include generalization (`extends`), realization (`implements`), and 
    dependency arrows. Do not list inherited members unless they are explicitly overriden.
 
-1. Execute the command to generate the API documentation website for the conde contained in this exercise
+1. Execute the command to generate the API documentation website for the code contained in this exercise
    and place it in the `doc` subdirectory.
    Use the `-link` option with the `javadoc` command to automatically link external types (e.g., `Object`)
    to the official Oracle API documentation website
