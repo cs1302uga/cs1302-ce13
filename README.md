@@ -53,6 +53,8 @@ command depends on your present working directory), then please note that contex
    The "Java Type" column should list the outermost type in the file (e.g., class, interface, enum, etc). 
    The "Depends On" column should list any Java types in the starter code that the file
    is dependent upon.
+   
+2. Breathe in. Breathe out. No UML for this step today.
 
 1. Execute the command to generate the API documentation website for the code contained in this exercise
    and place it in the `doc` subdirectory.
