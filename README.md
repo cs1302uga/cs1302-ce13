@@ -53,11 +53,6 @@ command depends on your present working directory), then please note that contex
    The "Java Type" column should list the outermost type in the file (e.g., class, interface, enum, etc). 
    The "Depends On" column should list any Java types in the starter code that the file
    is dependent upon.
-   
-1. In your notes, draw a complete, proper UML diagram for all of the code contained in the
-   starter code. You might need to devote an entire page to this. We recommend using a pencil.
-   Be sure to include generalization (`extends`), realization (`implements`), and 
-   dependency arrows. Do not list inherited members unless they are explicitly overriden.
 
 1. Execute the command to generate the API documentation website for the code contained in this exercise
    and place it in the `doc` subdirectory.
