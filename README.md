@@ -162,7 +162,8 @@ command depends on your present working directory), then please note that contex
 **CHECKPOINT**
 
 1. Update and document the `Driver` class to use your generic `Container` class instead of
-   `ObjectContainer` without changing the datatypes of any non-container local variables
+   `ObjectContainer`. At this time, **do not fix the bug that you found in the first checkpoint**.
+   Also, do not change the datatypes of any non-container local variables
    (i.e., do not change the types for `lastString` and `lastDouble`). Whenever you refer to
    the type for your container class, it must be fully parameterized. That is, we are explicitly
    requiring you not to use the raw type version of `Container` for this step.
