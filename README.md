@@ -14,9 +14,14 @@ implementations depend on the type.
 
 ## Prerequisite Knowledge
 
-* Basic knowledge of Java Generics.
+* Basic knowledge of [Java Generics](https://github.com/cs1302uga/cs1302-tutorials/blob/master/generics/generic-classes/generic-classes.md)
 * [Git Glossary](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
+## Course-Specific Learning Outcomes - FINISH UPDATING!!
+
+* **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor using inheritance and 
+polymorphism to emphasize code reuse.
+* **LO4.d:** Utilize  inheritance-based polymorphism in a software solution.
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
@@ -42,20 +47,17 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-   For each Java file under the `src` subdirectory, fill out a table similar to the following:
+   For each Java file under the `src` subdirectory, fill out a row in a table similar to the following:
    
-   | File Name | Java Type? | FQN | Depends On |
-   |-----------|------------|-----|------------|
-   |-----------|------------|-----|------------|
-   |-----------|------------|-----|------------|
-   |-----------|------------|-----|------------|
+   | File Name | FQN | Depends On |
+   |-----------|-----|------------|
+   |-----------|-----|------------|
+   |-----------|-----|------------|
+   |-----------|-----|------------|
 
-   The "Java Type" column should list the outermost type in the file (e.g., class, interface, enum, etc). 
    The "Depends On" column should list any Java types in the starter code that the file
    is dependent upon.
    
-2. Breathe in. Breathe out. No UML for this step today.
-
 1. Execute the command to generate the API documentation website for the code contained in this exercise
    and place it in the `doc` subdirectory.
    Use the `-link` option with the `javadoc` command to automatically link external types (e.g., `Object`)
