@@ -73,21 +73,10 @@ command depends on your present working directory), then please note that contex
    node objects should also be included in the diagram.
 
 1. Compile the starter code using `bin` as the default package for compiled code. Make sure you compile
-   the classes in the proper order considering the dependencies. If you encounter any compilation
-   errors:
-   
-   1. Look at the first error reported by `javac`;
-   1. Write the error down in your notes;
-   1. Fix the error in the code using type casting;
-   1. Recompile;
-   1. Note the fix in your notes; then
-   1. Repeat as needed.
-
-   **Note:** Unless absolutely necessary, casting should be avoided. We are doing it here for educational
-   purposes.
+   the classes in the proper order considering the dependencies.
    
 1. Run `Driver`. If you counter an exception, then detail the following in your notes:
-   1. The complete output of the compiler;
+   1. The complete output of the JVM;
    1. Why the exception was thrown;
    1. Fix the code without changing the datatype of the `lastDouble` variable;
    1. Recompile;
@@ -134,13 +123,10 @@ command depends on your present working directory), then please note that contex
       ```
       $ git checkout IDNUM -b restart
       ```
-
-   1. View the output of a condensed, graphical version of the Git log.
-      In your notes, describe the graph displayed by the log.
       
-   1. Confirm that you traveled through time by inspecting the contents of the `.java`
-      files. In your notes, mark today's date as the day that you became a time
-      traveler!
+   1. Confirm that you traveled through time by inspecting the contents of the `Driver.java`
+      file. The original bug should now be present in your code. In your notes, mark today's 
+      date as the day that you became a time traveler!
 
 1. Now let's create a generic version of the `ObjectContainer` class called
    `cs1302.ce13.Container` with a type parameter called `T`. Before you write the code,
