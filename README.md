@@ -47,24 +47,11 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-   For each Java file under the `src` subdirectory, fill out a row in a table similar to the following:
+   A UML diagram for the classes contained in this directory can be seen below:
    
-   | File Name | FQN | Depends On |
-   |-----------|-----|------------|
-   |-----------|-----|------------|
-   |-----------|-----|------------|
-   |-----------|-----|------------|
-
-   The "Depends On" column should list any Java types in the starter code that the file
-   is dependent upon.
    
-1. Execute the command to generate the API documentation website for the code contained in this exercise
-   and place it in the `doc` subdirectory.
-   Use the `-link` option with the `javadoc` command to automatically link external types (e.g., `Object`)
-   to the official Oracle API documentation website
-   [here](https://docs.oracle.com/javase/8/docs/api).
-   Be sure to write the full command in your notes.
-
+   **ADD UML DIAGRAM**
+   
 1. For each line in the `createStringList` method in `Driver.java`, draw a diagram that illustrates any nodes
    that have been created along with their associated string values and next references. Since next is a
    reference, you would either need to denote it as null or draw an arrow to the object it references.
@@ -96,7 +83,7 @@ command depends on your present working directory), then please note that contex
    1. Use the following command to view a condensed, graphical version of the Git log:
 
       ```
-      $ git log --graph --oneline --all --decorate
+      $ git log --all --decorate --oneline --graph
       ```
 
       The oldest commit in the log is displayed last. In this condensed version, each
@@ -128,18 +115,39 @@ command depends on your present working directory), then please note that contex
       file. The original bug should now be present in your code. In your notes, mark today's 
       date as the day that you became a time traveler!
 
-1. Now let's create a generic version of the `ObjectContainer` class called
-   `cs1302.ce13.Container` with a type parameter called `T`. Before you write the code,
-   draw a UML diagram in your notes to illustrate what the class will look like.
-   You may denote any type parameters in the class name in your diagram similar to
-   how you would denote them in class's signature in a `.java` file.
+1. **Please read this bullet and all sub-bullets before continuing.** 
+   Let's create a new generic version of the `ObjectContainer` class called
+   `cs1302.ce13.Container` with a type parameter called `ContentType` or just `T`. 
+   
+   1. Use the `cp` command to copy and rename the `ObjectContainer.java`
+      to `Container.java`.
+      
+   1. To help you get started with the new class, open `Container.java` in Emacs, then 
+      use `M-x` followed by the complete word `replace-string` (usually abbreviated as 
+      `M-x replace-string`) to help you replace `ObjectContainer` with `Container`. 
+      **If you mess up, remember that you can undo. If you mess up a lot, you can delete
+      the file and make another copy.**
 
-1. Now write and document the source code for the generic `cs1302.ce13.Container` class.
-   Since your class will have a type parameter, be sure to include an `@param` for `<T>`
-   in your Javadoc comment for the class -- something that you've likely not had to do in
-   the past.  Whenever you refer to the type for  your container class, it must be fully
-   parameterized. That is, we are explicitly requiring you not to use the raw type
-   version of `Container` for this step.
+   1. Tell Git to track changes on `Container.java`, then commit your recent changes to 
+      your local copy of the exercise repository. Be sure to include a good log message.
+
+   1. Before you continue to write / modify the code further, draw a UML diagram in your 
+      notes to illustrate what the class will look like after you make it generic. You may 
+      denote any type parameters next to the class name in your diagram similar to how you would 
+      write them in the class's signature in the `.java` file.
+
+**CHECKPOINT**
+
+1. Now update the source code and documentation for the generic `cs1302.ce13.Container` class.
+   Since your class will have a type parameter, be sure to include an `@param` for `<ContentType>`
+   or `<T>` in your Javadoc comment for the class -- something that you've likely not had to do in
+   the past. **Except for the constructor names (which should be written simply as `Container`),**
+   any use of the datatype `Container` needs to be fully parameterized. That is, we are explicitly 
+   requiring that you not use the raw type version of `Container` when updating your code for this 
+   step.
+   
+   * **NOTE:** The FQN for this class is `cs1302.ce13.Container`. Note carefully that the generic
+     type parameter is not included in the FQN. 
 
 1. Compile your new `Container` code using `bin` as the default package for compiled code.
    If you encounter any compilation errors:
@@ -152,9 +160,11 @@ command depends on your present working directory), then please note that contex
    1. Repeat as needed.
 
 1. Generate the API documentation website for all of the code in the `cs1302` package
-   into the `doc` directory. You may need to create the `doc` directory if it does not already exist.
-   Host the documentation on Nike using `cs1302-ce13-doc` as the name for your symbolic link.
-   What is the URL for the `Container` class on your website?
+   into the `doc` directory. What is the URL for the `Container` class on your website?
+   Use the `-link` option with the `javadoc` command to automatically link external types 
+   (e.g., `Object`) to the official Oracle API documentation website
+   [here](https://docs.oracle.com/javase/8/docs/api).
+   Be sure to write the full command in your notes.
 
 1. Commit the changes to your local copy of the exercise repository.
    Be sure to include a good log message.
