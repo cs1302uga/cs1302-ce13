@@ -4,8 +4,8 @@ import cs1302.Utility;
 
 /**
  * Represents a container for objects of type {@code Object} Each container has associated
- * with it a set of properties. Within this documentation, a property that is referred to as 
- * <i>set</i> is assumed to refer to some object, and a property that is <i>unset</i> is 
+ * with it a set of properties. Within this documentation, a property that is referred to as
+ * <i>set</i> is assumed to refer to some object, and a property that is <i>unset</i> is
  * assumed to contain the value {@code null}. Here is the full list of associated
  * properties:
  * <ul style="padding-top: 1em;">
@@ -18,8 +18,9 @@ import cs1302.Utility;
  * the container's constructors and associated setter methods.
  *
  * <h3>Conditions for {@code next} Property</h3>
- * The {@code next} property may be <i>set</i> or <i>unset</i>. Users of this container may use 
- * verbeage such as "this container does not refer to anoter container" when this property is unset.
+ * The {@code next} property may be <i>set</i> or <i>unset</i>. Users of this container may use
+ * verbeage such as "this container does not refer to another container" when this property
+ * is unset.
  */
 public class ObjectContainer {
 
@@ -28,9 +29,9 @@ public class ObjectContainer {
 
     /** A reference to another {@code ObjectContainer}. */
     private ObjectContainer next;
-    
+
     /**
-     * Constructs {@code ObjectContainer} with the {@code contents} property <i>set</i> and the 
+     * Constructs {@code ObjectContainer} with the {@code contents} property <i>set</i> and the
      * {@code next} property <i>unset</i>.
      *
      * @param contents reference to the associated object
@@ -52,7 +53,7 @@ public class ObjectContainer {
         set(contents);
         this.next = next;
     } // ObjectContainer
-    
+
     /**
      * Returns the value of the {@code next} property for this container.
      *
@@ -61,7 +62,7 @@ public class ObjectContainer {
     public ObjectContainer getNext() {
         return next;
     } // getNext
-    
+
     /**
      * Sets the value of the {@code next} property for this container.
      *
@@ -70,7 +71,7 @@ public class ObjectContainer {
     public void setNext(ObjectContainer next) {
         this.next = next;
     } // setNext
-    
+
     /**
      * Sets the value of the {@code contents} property for this container.
      *
