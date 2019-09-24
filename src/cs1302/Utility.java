@@ -1,5 +1,8 @@
 package cs1302;
 
+/**
+ * A class containing helpful static methods.
+ */
 public class Utility {
 
     /**
@@ -14,8 +17,8 @@ public class Utility {
      * {@code o} is null.
      */
     public static void nullCheck(String method, Object ... o) {
-        for(Object obj: o) {
-            if(o == null) {
+        for (Object obj: o) {
+            if (o == null) {
                 throw new NullPointerException(method +
                                                ": Null Argument Provided");
             } // if

@@ -1,9 +1,9 @@
 package cs1302.ce13;
 
 /**
- * Driver program for cs1302 class exercise 13 using various types of 
+ * Driver program for cs1302 class exercise 13 using various types of
  * container objects.
- * 
+ *
  * @author Brad Barnes and Supa' Mike
  * @version 1.0
  */
@@ -15,7 +15,7 @@ public class Driver {
      * @param args command line argument array.
      */
     public static void main(String[] args) {
-	
+
         ObjectContainer stringHead = createStringList();
         ObjectContainer doubleHead = createDoubleList();
 
@@ -29,18 +29,18 @@ public class Driver {
             .getNext()
             .get();
 
-        System.out.println(lastString);	
+        System.out.println(lastString);
         System.out.println(lastDouble);
-	
+
     } // main
 
     /**
      * Returns the first {@code ObjectContainer} reference in a list
      * of {@code ObjectContainer} objects. The returned list is made
-     * up of four {@code ObjectContainer} objects, each containing 
-     * a single {@code String}. 
+     * up of four {@code ObjectContainer} objects, each containing
+     * a single {@code String}.
      *
-     * @return a reference to the head of the {@code ObjectContainer} 
+     * @return a reference to the head of the {@code ObjectContainer}
      * list.
      */
     private static ObjectContainer createStringList() {
@@ -54,10 +54,10 @@ public class Driver {
     /**
      * Returns the first {@code ObjectContainer} reference in a list
      * of {@code ObjectContainer} objects. The returned list is made
-     * up of four {@code ObjectContainer} objects, each containing 
-     * a single {@code Double}. 
+     * up of four {@code ObjectContainer} objects, each containing
+     * a single {@code Double}.
      *
-     * @return a reference to the head of the {@code ObjectContainer} 
+     * @return a reference to the head of the {@code ObjectContainer}
      * list.
      */
     private static ObjectContainer createDoubleList() {
@@ -67,5 +67,5 @@ public class Driver {
         oc = new ObjectContainer(1.237, oc);
         return oc;
     } // createStringList
-    
+
 } // Driver
