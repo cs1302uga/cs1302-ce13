@@ -48,7 +48,7 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-   A UML diagram for the classes contained in this directory can be seen below:
+   A UML diagram for the classes contained in this directory (excluding the `Driver`) can be seen below:
    
    ![UML Diagram](res/ce13.png)
    
@@ -126,7 +126,7 @@ command depends on your present working directory), then please note that contex
       use `M-x` followed by the complete word `replace-string` (usually abbreviated as 
       `M-x replace-string`) to help you replace `ObjectContainer` with `Container`. 
       **If you mess up, remember that you can undo. If you mess up a lot, you can delete
-      the file and make another copy.**
+      the file and make another copy of the original `ObjectContainer.java` file.**
 
    1. Tell Git to track changes on `Container.java`, then commit your recent changes to 
       your local copy of the exercise repository. Be sure to include a good log message.
@@ -134,17 +134,21 @@ command depends on your present working directory), then please note that contex
    1. Before you continue to write / modify the code further, draw a UML diagram in your 
       notes to illustrate what the class will look like after you make it generic. You may 
       denote any type parameters next to the class name in your diagram similar to how you would 
-      write them in the class's signature in the `.java` file.
+      write them in the class's signature in the `.java` file. Your type parameter can have
+      any name you choose. You've probably seen us use `<ContentType>` but the Java convention
+      is to use `<T>`.
+      
+      **Except for the constructor names (which should be written simply as `Container`),**
+      any use of the datatype `Container` needs to be fully parameterized. That is, we are 
+      explicitly requiring that you not use the raw type version of `Container` when updating 
+      your code for this step.
 
 **CHECKPOINT**
 
 1. Now update the source code and documentation for the generic `cs1302.ce13.Container` class.
    Since your class will have a type parameter, be sure to include an `@param` for `<ContentType>`
    or `<T>` in your Javadoc comment for the class -- something that you've likely not had to do in
-   the past. **Except for the constructor names (which should be written simply as `Container`),**
-   any use of the datatype `Container` needs to be fully parameterized. That is, we are explicitly 
-   requiring that you not use the raw type version of `Container` when updating your code for this 
-   step.
+   the past. 
    
    * **NOTE:** The FQN for this class is `cs1302.ce13.Container`. Note carefully that the generic
      type parameter is not included in the FQN. 
@@ -161,10 +165,6 @@ command depends on your present working directory), then please note that contex
 
 1. Generate the API documentation website for all of the code in the `cs1302` package
    into the `doc` directory. What is the URL for the `Container` class on your website?
-   Use the `-link` option with the `javadoc` command to automatically link external types 
-   (e.g., `Object`) to the official Oracle API documentation website
-   [here](https://docs.oracle.com/javase/8/docs/api).
-   Be sure to write the full command in your notes.
 
 1. Commit the changes to your local copy of the exercise repository.
    Be sure to include a good log message.
