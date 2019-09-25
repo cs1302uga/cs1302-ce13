@@ -50,8 +50,7 @@ command depends on your present working directory), then please note that contex
 
    A UML diagram for the classes contained in this directory can be seen below:
    
-   
-   **ADD UML DIAGRAM**
+   ![UML Diagram](res/ce13.png)
    
 1. For each line in the `createStringList` method in `Driver.java`, draw a diagram that illustrates any nodes
    that have been created along with their associated string values and next references. Since next is a
