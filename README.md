@@ -17,11 +17,12 @@ implementations depend on the type.
 * Basic knowledge of [Java Generics](https://github.com/cs1302uga/cs1302-tutorials/blob/master/generics/generic-classes/generic-classes.md)
 * [Git Glossary](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
-## Course-Specific Learning Outcomes - FINISH UPDATING!!
+## Course-Specific Learning Outcomes
 
-* **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor using inheritance and 
-polymorphism to emphasize code reuse.
-* **LO4.d:** Utilize  inheritance-based polymorphism in a software solution.
+* **LO2.d:** (Partial) Implement new generic methods, interfaces, and classes in a software solution.
+* **LO5.a:** (Partial) Utilize a version control tool such as Git or Subversion to store and
+update source code in a multi-programmer software solution.
+
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
