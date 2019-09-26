@@ -52,12 +52,15 @@ command depends on your present working directory), then please note that contex
    
    ![UML Diagram](res/ce13.png)
    
-1. For each line in the `createStringList` method in `Driver.java`, draw a diagram that illustrates any nodes
-   that have been created along with their associated string values and next references. Since next is a
-   reference, you would either need to denote it as null or draw an arrow to the object it references.
-   Redraw the entire picture after each line. Although the associated string is also a reference, you may
-   draw it within the node. Number each step in your notes. Reference variables that are not contained in
-   node objects should also be included in the diagram.
+1. For each line in the `createStringList` method in `Driver.java`, draw a diagram that illustrates any objects
+   (you may think of them as nodes) that have been created along with their associated `content` values
+   values and `next` values. For reference types, you would either need to denote it as `null` or draw an 
+   arrow to the object it references. Although the associated string is also a reference, you may
+   draw it within the node.
+   * **Redraw the entire picture after each line.**
+   * Number each step in your notes. 
+   * Reference variables that are not contained in
+     node objects should also be included in the diagram.
 
 1. Compile the starter code using `bin` as the default package for compiled code. Make sure you compile
    the classes in the proper order considering the dependencies.
