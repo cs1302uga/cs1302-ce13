@@ -1,5 +1,7 @@
 # cs1302-ce13 Java Generics
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 > Be careful what you wish for, lest it come true.
 > **--Chinese Proverb**
 
