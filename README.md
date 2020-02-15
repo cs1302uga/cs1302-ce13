@@ -1,6 +1,8 @@
 # cs1302-ce13 Java Generics
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+<!--[Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Max Group Size: 3](https://img.shields.io/badge/Max%20Group%20Size-3-important)-->
 
 > Be careful what you wish for, lest it come true.
 > **--Chinese Proverb**
@@ -132,7 +134,7 @@ command depends on your present working directory), then please note that contex
       `M-x replace-string`) to help you replace `ObjectContainer` with `Container`. 
       **If you mess up, remember that you can undo. If you mess up a lot, you can delete
       the file and make another copy of the original `ObjectContainer.java` file.**
-
+   
    1. Tell Git to track changes on `Container.java`, then commit your recent changes to 
       your local copy of the exercise repository. Be sure to include a good log message.
 
@@ -167,6 +169,8 @@ command depends on your present working directory), then please note that contex
    1. Recompile;
    1. Note the fix in your notes; then
    1. Repeat as needed.
+
+1. Make sure your code passes the `checkstyle` audit.
 
 1. Generate the API documentation website for all of the code in the `cs1302` package
    into the `doc` directory. What is the URL for the `Container` class on your website?
