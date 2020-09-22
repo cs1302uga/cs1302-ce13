@@ -1,7 +1,6 @@
 # cs1302-ce13 Java Generics
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Max Group Size: 3](https://img.shields.io/badge/Max%20Group%20Size-3-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > Be careful what you wish for, lest it come true.
 > **--Chinese Proverb**
@@ -29,15 +28,17 @@ update source code in a multi-programmer software solution.
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
 command depends on your present working directory), then please note that context as well.
 
-### Getting Started
+## Exercise Steps
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce13`:
+### Checkpoint 1 Steps - Getting Started
+
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce13`:
 
    ```
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce13.git
@@ -78,7 +79,13 @@ command depends on your present working directory), then please note that contex
 
 1. Commit the changes to your local copy of the exercise repository. Be sure to include a good log message.
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
 
 1. Now that you have that working, let's use Git to go back in time to what the exercise
    directory looked like when you first cloned the repository so that we can fix the code
@@ -149,7 +156,13 @@ command depends on your present working directory), then please note that contex
       explicitly requiring that you not use the raw type version of `Container` when updating 
       your code for this step.
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
 
 1. Now update the source code and documentation for the generic `cs1302.ce13.Container` class.
    Since your class will have a type parameter, be sure to include an `@param` for `<ContentType>`
@@ -177,7 +190,13 @@ command depends on your present working directory), then please note that contex
 1. Commit the changes to your local copy of the exercise repository.
    Be sure to include a good log message.
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 4 Steps
 
 1. Update and document the `Driver` class to use your generic `Container` class instead of
    `ObjectContainer`. At this time, **do not fix the bug that you found in the first checkpoint**.
@@ -211,7 +230,51 @@ command depends on your present working directory), then please note that contex
 
 1. View the output of a condensed, graphical version of the Git log.
 
-**CHECKPOINT**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce13`
+   directory with the following information.
+
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. The full link to the website generated in this exercise.
+   
+   Here is an example of the contents of `SUBMISSION.md`.
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce13-doc
+   ```
+
+1. Change directories to the parent of `cs1302-ce13` (e.g., `cd ..` from `cs1302-ce13`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
+   
+   ```
+   $ submit cs1302-ce13 csci-1302
+   ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
+
+   **Note:** You must be on Odin to submit.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
